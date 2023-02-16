@@ -7,12 +7,15 @@ int main(int argc, char const *argv[])
 	cin>>t;
 
 	while(t--){
-		int a,b;
+		long long a,b;
 		cin>>a>>b;
+		// if(a<b) cout<<(b-a);
+		// else cout<<a%b;
+		// cout<<endl;
+		if(a%b==0) cout<<0;
+		else cout<<b-a%b;
 
-		int side=min(max(2*b,a),max(2*a,b));
-		int area=side*side;
-		cout<<area<<endl;
+		cout<<endl;
 	}
 	return 0;
 }

@@ -7,12 +7,9 @@ int main(int argc, char const *argv[])
 	cin>>t;
 
 	while(t--){
-		int a,b;
-		cin>>a>>b;
-
-		int side=min(max(2*b,a),max(2*a,b));
-		int area=side*side;
-		cout<<area<<endl;
+		long long n;
+		cin>>n;
+		cout<<(n-1)/2<<endl;
 	}
 	return 0;
 }
